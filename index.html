@@ -55,9 +55,14 @@
             <div class="row mt-3 ">
                 <div class="col-sm-6 align-middle" id="intro-text">
                     <span> Hi👋! I am </span> <br>
-                    <span id="name"> Pranjal Soni </span>
+                    <span id="name" class="input"> Pranjal Soni </span>
                     <br>
-                    <span id="profile-desc">Data Scientist and analyst. Transform data into insights.
+                    <!-- <span id="profile-desc">Data Scientist and analyst. Transform data into insights. -->
+                    <span id="profile-desc">
+                        My interest lies in transforming data, generating insights, building data-driven systems, and
+                        storytelling with data. In the short span of my career, I have worked with different data teams
+                        and gained experience working with different types of data like tabular data, image data, text
+                        data, digital signals and building dashboards.
                     </span>
                     <hr>
                     <div id="public-profile">
@@ -452,6 +457,15 @@
         </footer>
 
         <!-- JS file links-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".input", {
+                strings: ["", "Pranjal Soni", "Data Scientist", "Problem Solver"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            });
+        </script>
 
 
 </body>
