@@ -28,7 +28,7 @@
         <a href="#pranjal"><img src="./img/icons8-about-me-male-50.png" alt="" class="float-img">About</a>
         <a href="#experience"><img src="./img/experience-47782.png" alt="" class="float-img">Experience</a>
         <a href="#projects"><img src="./img/project-icon.png" alt="" class="float-img">Project</a>
-        <a href="#skills"><img src="./img/icons8-email-send-24.png" alt="" class="float-img">Contact</a>
+        <a href="#contact"><img src="./img/icons8-email-send-24.png" alt="" class="float-img">Contact</a>
 
     </div>
     <section id="pranjal">
@@ -42,7 +42,7 @@
                     <a class="nav-link" href="https://github.com/Pranjal-Soni/" target="_blank">Github</a>
                     <a class="nav-link"
                         href="https://drive.google.com/file/d/110XA4O6OUqcfqoKU-52OvPHhkTxrEx-A/view?usp=sharing">Resume</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </nav>
             </div>
         </header>
@@ -124,7 +124,6 @@
                                 business insights of the data.</li>
                             <li>Setup PostgreSQL database on the server, create pipelines for automation to
                                 dump the data, and performed data collection</li>
-
                         </ul>
                     </div>
                 </div>
@@ -181,8 +180,9 @@
     <!-- <div id="projects" class="container-fluid text-center">
         <h2>Projects</h2> -->
     <section class="scroll-panel container-fluid" id="projects">
+        <div class="container">
         <div class="row">
-            <h2 class="text-center title">Projects</h2>
+            <h2 class="text-center" style="color: rgb(244, 244, 244);">Projects</h2>
             <!-- <div class="space"></div> -->
             <div class="col-xs-12 col-md-4">
                 <div class="img-thumbnail">
@@ -205,8 +205,8 @@
                 <div class="img-thumbnail">
                     <p class="lead text-center">Bank Customer Churn Prediction</p>
                     <img src="./img/bank_customer_churn.png" class="img-thumbnail">
-                    <a id="links" href="https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction" target="_blank"><button
-                            class="btn btn-default btn-block">View Project</button></a>
+                    <a id="links" href="https://github.com/Pranjal-Soni/Bank-Customer-Churn-Prediction"
+                        target="_blank"><button class="btn btn-default btn-block">View Project</button></a>
                 </div>
             </div>
         </div>
@@ -215,18 +215,12 @@
                 <div class="img-thumbnail">
                     <p class="lead text-center">Dog Breed Image Classification</p>
                     <img src="./img/dog_breed_classification.jpg" class="img-thumbnail">
-                    <a id="links" href="https://github.com/Pranjal-Soni/Dog-Breed-Image-Classification" target="_blank"><button
-                            class="btn btn-default btn-block">View Project</button></a>
+                    <a id="links" href="https://github.com/Pranjal-Soni/Dog-Breed-Image-Classification"
+                        target="_blank">
+                    <button class="btn btn-default btn-block">View Project</button></a>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="img-thumbnail">
-                    <p class="lead text-center">Random Quote Machine</p>
-                    <img src="" class="img-thumbnail">
-                    <a id="links" href="https://codepen.io/kingisaac95/full/ZBXQmo/" target="_blank"><button
-                            class="btn btn-default btn-block">View Project</button></a>
-                </div>
-            </div>
+        </div>
         </div>
     </section>
     <!-- </div> -->
@@ -369,43 +363,61 @@
 
 
     <!-- skills -->
-   
+
 
 
     <!-- contact section start -->
-    <section class="scroll-panel" id="contact">
-        <div class="row">
-          <h2 class="text-center title">CONTACT ME</h2>
-          <div class="space"></div>
-          <div class="col-xs-12 col-md-8">
-            <form role="form">
-              <div class="form-group has-feedback">
-                <label class="sr-only" for="name2">Name</label>
-                <input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
-                <i class="fa fa-user form-control-feedback"></i>
-              </div>
-              <div class="form-group has-feedback">
-                <label class="sr-only" for="email2">Email address</label>
-                <input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
-                <i class="fa fa-envelope form-control-feedback"></i>
-              </div>
-              <div class="form-group has-feedback">
-                <label class="sr-only" for="message2">Message</label>
-                <textarea class="form-control" rows="8" id="message2" placeholder="Describe your project" name="message2"
-                  required></textarea>
-                <i class="fa fa-pencil form-control-feedback"></i>
-              </div>
-              <input type="submit" value="Send" class="btn btn-default btn-block">
-            </form>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <p class="lead">Wanna get in touch with me? Be it a project idea you wanna develop, to request more info about
-              myself or my experience, to ask for my resume... just feel free to drop me a line anytime. I'll be right
-              there to reply you.</p>
-          </div>
-        </div>
-      </section>
+    <div class="container-fluid" id="contact">
+        <div class="contain container">
 
+            <div class="wrapper">
+
+                <div class="form">
+                    <h4>GET IN TOUCH</h4>
+                    <h2 class="form-headline">Send a message</h2>
+                    <form id="submit-form" action="">
+                        <p>
+                            <input id="form-name" class="form-input" type="text" placeholder="Your Name*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p>
+                            <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p class="full-width">
+                            <input id="company-name" class="form-input" type="text" placeholder="Company Name*"
+                                required>
+                            <small></small>
+                        </p>
+                        <p class="full-width">
+                            <textarea minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*"
+                                required></textarea>
+                            <small></small>
+                        </p>
+                        <p class="full-width">
+                            <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                            <button class="reset-btn" onclick="reset()">Reset</button>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="contacts contact-wrapper">
+
+                    <ul>
+                        <!-- <li>We've driven online revenues of over <span class="highlight-text-grey">$2
+                      billion</span> for our clients. Ready to know
+                    how we can help you?</li> -->
+                        <span class="hightlight-contact-info">
+                            <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                pranjal98soni@gmail.com</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> <span
+                                    class="highlight-text">+919461294122</span></li>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="container-fluid">
         <span>Made with ❤️ by <a href="#">Pranjal Soni</a>.</span>
@@ -420,6 +432,55 @@
             backSpeed: 100,
             loop: true
         });
+
+        const nameEl = document.querySelector("#name");
+        const emailEl = document.querySelector("#email");
+        const companyNameEl = document.querySelector("#company-name");
+        const messageEl = document.querySelector("#message");
+
+        const form = document.querySelector("#submit-form");
+
+        function checkValidations() {
+            let letters = /^[a-zA-Z\s]*$/;
+            const name = nameEl.value.trim();
+            const email = emailEl.value.trim();
+            const companyName = companyNameEl.value.trim();
+            const message = messageEl.value.trim();
+            if (name === "") {
+                document.querySelector(".name-error").classList.add("error");
+                document.querySelector(".name-error").innerText =
+                    "Please fill out this field!";
+            } else {
+                if (!letters.test(name)) {
+                    document.querySelector(".name-error").classList.add("error");
+                    document.querySelector(".name-error").innerText =
+                        "Please enter only characters!";
+                } else {
+
+                }
+            }
+            if (email === "") {
+                document.querySelector(".name-error").classList.add("error");
+                document.querySelector(".name-error").innerText =
+                    "Please fill out this field!";
+            } else {
+                if (!letters.test(name)) {
+                    document.querySelector(".name-error").classList.add("error");
+                    document.querySelector(".name-error").innerText =
+                        "Please enter only characters!";
+                } else {
+
+                }
+            }
+        }
+
+        function reset() {
+            nameEl = "";
+            emailEl = "";
+            companyNameEl = "";
+            messageEl = "";
+            document.querySelector(".name-error").innerText = "";
+        }
     </script>
 
 
